@@ -48,4 +48,17 @@
 .skills__percentage{
     display: block;
     background-color: var(--primary-color);
+    position: relative;
+}
+
+.skills__percentage span{
+    background-color: var(--container-color);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: -12px;
 }

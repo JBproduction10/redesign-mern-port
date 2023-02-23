@@ -1,5 +1,7 @@
 import React from 'react';
 import './skills.css';
+import {skills} from '../../Data';
+import {motion} from 'framer-motion';
 
 const Skills = () => {
   return (
@@ -11,20 +13,37 @@ const Skills = () => {
       </p>
 
       <div className='skills__container container grid'>
-        <div className='skills__item'>
-          <div className='skills__titles'>
-            <h3 className='skills__name'></h3>
-            <span className='skills__number'>
-              <span>%</span>
-            </span>
+        {skills.map(({name, percentage, description}, index) =>{
+          return (
+            <div className='skills__item'>
+              <div className='skills__titles'>
+                <h3 className='skills__name'>{name}</h3>
+                <span className='skills__number'>
+                  {percentage} <span>%</span>
+                </span>
+              </div>
+
+              <p className='skills__description'>{description}</p>
+
+              <div className='skills__bar'>
+                <motion.span
+                initial={{
+                  width:0,
+                }}
+                animate={{
+                  width: `${percentage}%`
+                }}
+                transition={{
+                  duration:2.5,
+                }}
+                className='skills__percentage'
+                >
+                  <span></span>
+                </motion.span>
+              </div>
           </div>
-          <p className='skills__description'></p>
-          <div className='skills__bar'>
-            <span className='skills__percentage'>
-              <span></span>
-            </span>
-          </div>
-        </div>
+          )
+        })}
       </div>
     </section>
   )

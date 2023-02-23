@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import {Pagination} from 'swiper';
 import './services.css';
+import shapeTwo from '../../assets/shape-2.png';
 
 
 const Services = () => {
@@ -51,6 +52,7 @@ const Services = () => {
                 See Pricing
                 <FaArrowRight className='link__icon'></FaArrowRight>
               </a>
+              <img src={shapeTwo} alt='' className='shape c__shape'/>
             </SwiperSlide>
           );
         })}
