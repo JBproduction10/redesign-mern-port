@@ -1,4 +1,4 @@
-const experienceSchema = require('../models/experience');
+const experienceSchema = require('../models/Experience');
 
 exports.getExperience = async(req,res) =>{
     const experience = experienceSchema.find();

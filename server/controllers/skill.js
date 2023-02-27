@@ -1,4 +1,4 @@
-const skillSchema = require('../models/skill');
+const skillSchema = require('../models/Skill');
 
 exports.getSkill = async(req,res) =>{
     const skill = skillSchema.find();
