@@ -20,6 +20,9 @@ const projectSchema = new mongoose.Schema({
     },
     category:{
         type: String,
+    },
+    link:{
+        type: String
     }
 });
 

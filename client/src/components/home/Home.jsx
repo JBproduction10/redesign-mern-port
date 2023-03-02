@@ -1,12 +1,15 @@
 import React from 'react';
 import './home.css';
 import {motion} from 'framer-motion';
+import Typewriter from 'typewriter-effect';
 import profileImg from "../../assets/jona.png";
 import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
-import {BsTwitter, BsInstagram, BsGithub,BsFacebook} from 'react-icons/bs';
+import {BsTwitter, BsInstagram, BsGithub,BsFacebook,BsLinkedin} from 'react-icons/bs';
+
 
 const Home = () => {
+
   return (
     <section className='home' id='home'>
         <div className="home__wrapper">
@@ -35,7 +38,19 @@ const Home = () => {
 
             <p className='home__job'>
               <span className='text-cs'>I Am</span>
-              <b>a Sotfware Engineer</b>
+              <h1>
+                <Typewriter
+                    options={{
+                      strings:['a Software Engineer',
+                      'Game Developer',
+                      'Fullstack Developer'
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    
+                    }}
+                  />
+              </h1>
             </p>
 
             <motion.div
@@ -79,10 +94,9 @@ const Home = () => {
             </motion.div>
 
             <p className='home__text'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-              Ut, quia repudiandae repellendus aliquid eligendi 
-              enim impedit aut sapiente natus quas iste eaque quos debitis, 
-              ea veniam quam magni voluptas facere.
+              Software engineer | Game developer. 
+              Keen to learn new things, make mistakes, 
+              and improve my skills and abilities.
             </p>
 
             <motion.div 
@@ -111,6 +125,9 @@ const Home = () => {
               </a>
               <a href='' className='home__social-link'>
                 <BsTwitter/>
+              </a>
+              <a href='' className='home__social-link'>
+                <BsLinkedin/>
               </a>
             </motion.div>
             <div className='home__btns'>

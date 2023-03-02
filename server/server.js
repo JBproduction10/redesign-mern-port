@@ -26,6 +26,6 @@ app.use('/', require('./routes/project'));
 app.use('/', require('./routes/upload'));
 app.use('/', require('./routes/contact'));
 
-PORT = 8001 || process.env.PORT;
+PORT = 8000 || process.env.PORT;
 
 app.listen(PORT, () =>{console.log(`Server running on port ${PORT}`)});

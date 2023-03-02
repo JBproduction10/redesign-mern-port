@@ -45,6 +45,7 @@ const Resume = () => {
                     subtitle={val.subtitle}
                     date={val.date}
                     description={val.description}
+                    links={val.links}
                   />
                 )
               }

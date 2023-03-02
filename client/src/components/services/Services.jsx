@@ -1,6 +1,7 @@
 import React from 'react';
 import {services} from '../../Data';
-import {FaArrowRight} from 'react-icons/fa';import {Swiper, SwiperSlide} from 'swiper/react';
+import {FaArrowRight} from 'react-icons/fa';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import {Pagination} from 'swiper';

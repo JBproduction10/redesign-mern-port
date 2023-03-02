@@ -25,14 +25,15 @@ exports.getProjectId = async(req,res)=>{
 };
 
 exports.addProject = async(req,res) =>{
-    const {id, title, description, images, category} = req.body;
+    const {id, title, description, images, category, link} = req.body;
     try{
         const newProject = new projectSchema({
             id,
             title,
             description,
             images,
-            category
+            category,
+            link
         });
 
         await newProject.save();
@@ -46,10 +47,10 @@ exports.addProject = async(req,res) =>{
 };
 
 exports.updateProjectId = async(req,res)=>{
-    const {id,title,description,images,category} = req.body;
+    const {id,title,description,images,category,link} = req.body;
     try{
         const newProject = projectSchema.findByIdAndUpdate(req.params.id,
-            {id,title,description,images,category});
+            {id,title,description,images,category,link});
 
         let result = await newProject.save();
         await result;

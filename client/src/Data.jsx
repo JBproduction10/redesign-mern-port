@@ -4,6 +4,7 @@ import Project3 from './assets/project3.jpeg';
 import Project4 from './assets/project4.jpeg';
 import Project5 from './assets/project5.jpg';
 import Project6 from './assets/project6.jpg';
+import thegreateagleredo from './assets/thegreateagleredo.png';
 
 import Testimonial1 from './assets/testimonial1.jpg';
 import Testimonial2 from './assets/testimonial2.jpg';
@@ -32,18 +33,18 @@ export const links = [
     name: 'Resume',
     path: 'resume',
   },
-  {
-    name: 'Testimonials',
-    path: 'testimonial',
-  },
-  {
-    name: 'Pricing',
-    path: 'pricing',
-  },
-  {
-    name: 'Blog',
-    path: 'blog',
-  },
+  // {
+  //   name: 'Testimonials',
+  //   path: 'testimonial',
+  // },
+  // {
+  //   name: 'Pricing',
+  //   path: 'pricing',
+  // },
+  // {
+  //   name: 'Blog',
+  //   path: 'blog',
+  // },
   {
     name: 'Contact',
     path: 'contact',
@@ -141,11 +142,12 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    img: Project1,
-    category: 'Branding',
-    title: 'Zorro',
+    img: thegreateagleredo,
+    category: 'Development',
+    title: 'Thegreateagleredo',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+      'the great eagle tribute was my final project back in 2019 when learning frontend web development at CodeSpace academy Cape Town.',
+      links: 'https://thegreateagle.netlify.app/'
   },
   {
     id: 2,
@@ -192,9 +194,9 @@ export const projects = [
 export const cv = [
   {
     id: 1,
-    title: 'CoderHouse Courses',
-    subtitle: 'Backend Programming',
-    date: '2014 - 2016',
+    title: 'CodeSpace Courses',
+    subtitle: 'Frontend Programming',
+    date: '2018',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     category: 'education',
@@ -202,9 +204,9 @@ export const cv = [
 
   {
     id: 2,
-    title: 'Lviv National Academy of Arts',
-    subtitle: 'Faculty of Design',
-    date: '2012 - 2014',
+    title: 'Udacity',
+    subtitle: 'Fullstack development',
+    date: '2021',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     category: 'education',
@@ -212,7 +214,7 @@ export const cv = [
 
   {
     id: 3,
-    title: 'IT Future',
+    title: 'Finland University',
     subtitle: 'High School',
     date: '2010 - 2012',
     description:
